@@ -18,7 +18,7 @@
 
 **autoSAROceanContrast is a standalone Python module that has been tested with SAR images acquired in L-, S-, C-, and X-band and in polarizations modes VV, HH, HV, and VH.  It works on images in radar coordinates or on a georeferenced grid, and requires a map of the incidence angle for each pixel in the scene.  If land is in the scene, the user can mask it out in the provided NRCS data or optionally can specify that a user-provided land mask file be used.**
 
-** There are two output files, one containing the contrast ratio and the other containing the cumulative distribution function's value for those pixels that are identified as being radar-dark relative to the identified likely clean water pixels, i.e., having a contrast ratio significantly higher than that of the clean water peak, which is centered about a value of 1.  This threshold is set adaptively based upon the statistics of the contrast ratio for the scene.**
+**There are two output files, one containing the contrast ratio and the other containing the cumulative distribution function's value for those pixels that are identified as being radar-dark relative to the identified as likely clean water pixels, i.e., having a contrast ratio significantly higher than that of the clean water peak, which is centered about a value of 1.  This threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
 Copyright (C) 2024 California Institute of Technology.  Government Sponsorship Acknowledged.
 
