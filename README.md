@@ -75,7 +75,7 @@ Sample input and output files for each input format option are available at ****
 
 ## 5. [Algorithm](/docs/algorithm.md)
 
-## 6. [Related Open Source Code](/docs/related.md)
+## 6. Related Open Source Code
 
 NOTE: We intend to add open source code to classify the radar-dark pixels in the scene based upon damping ratio, to aid in identifying the thickest oil in a slick for emergency response.
 
@@ -83,6 +83,14 @@ NOTE: We intend to add open source code to classify the radar-dark pixels in the
 
 This effort was funded by the NASA 2018 *A.37 Earth Science Applications: Disaster Risk Reduction and Response* call's  Marine Oil Thickness (MOST) project, P.I. Francis Monaldo (NOAA).
 
+## 8. MOST Project
+[NASA-NOAA tech will aid marine oil spill response](https://phys.org/news/2021-12-nasa-noaa-tech-aid-marine-oil.html)
+
+[Hear about the MOST Project on YouTube](https://youtu.be/6brucBsqR-g)
+
+[Detecting oil thickness to aid oil spill response](https://appliedsciences.nasa.gov/our-impact/news/detecting-oil-thickness-aid-oil-spill-response)
+
+[A profile of MOST PI, Frank Monaldo](https://appliedsciences.nasa.gov/our-impact/people/frank-monaldo-making-most-technology-detect-oil-spills)
 
 
 
