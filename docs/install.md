@@ -8,13 +8,9 @@ to install this on your system, e.g., macports (*port install gdal*).
 
 ## 2. Installation without using Conda environments)
 
-To install this package, from this directory, run
+To install the libraries for this package, after 'git pull ...', run this from the OilClassification directory:
   
     pip install -e . 
-
-You may need additional python packages.
-
-    pip install scikit-image
 
 ## 3. Installation in new conda environment
 
