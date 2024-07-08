@@ -37,7 +37,7 @@ Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov) translated the MATLAB code to Py
 
 ***1.***Jones, C. E. (2023). An automated algorithm for calculating the ocean contrast in support of oil spill response. Marine Pollution Bulletin, 191, 114952.
 
-## 2. [Installion](/docs/install.md)
+## 2. [Installation](/docs/install.md)
 
 ## 3. [Instructions](/docs/instructions.md)
 
