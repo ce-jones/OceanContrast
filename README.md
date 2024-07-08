@@ -1,8 +1,8 @@
 # auto_SAR_Ocean_Contrast \(autonomous Ocean Contrast Estimation for SAR Images\)
 
 [![Language](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/)
-[![Latest version](https://img.shields.io/badge/latest%20version-v1.0-yellowgreen.svg)](https://github.com/leiyangleon/autoRIFT/releases)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/leiyangleon/autoRIFT/blob/master/LICENSE)
+[![Latest version CHANGE LINK](https://img.shields.io/badge/latest%20version-v1-yellowgreen.svg)](https://github.com/leiyangleon/autoRIFT/releases)
+[![License CHANGE LINK](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/leiyangleon/autoRIFT/blob/master/LICENSE)
 [![Citation](https://img.shields.io/badge/DOI-PUTHERE-blue)](https://doi.org/ADD)
 
 ### Update Notes:
@@ -12,13 +12,13 @@
 ```
 
 
-**A Python module for estimating the contrast in a SAR image of the ocean surface, relative to clean water pixels.  The code is primarily intended to identify oil slicks, but can be used to identify any radar-dark feature in a scene that is not entirely radar-dark. The entires scene cannot be radar-dark.**
+**A Python module for estimating the contrast in a SAR image of the ocean surface, relative to clean water pixels.  The code is primarily intended to identify oil slicks, but can be used to identify any radar-dark feature in a scene that is not entirely radar-dark. The contrast ratio is often referred to as the damping ratio in the scientific literature concerning mineral oil slicks.**
 
 **The contrast is defined as $\sigma^{clean}(\theta)\over\sigma(\theta)$, where $\sigma(\theta)$ is the calibrated Normalized Radar Cross Section (NRCS), which depends upon the incidence angle, $\theta$. The algorithm identifies high confidence clean sea pixels based on the statistics of the SAR intensity to calculate the ratio, as described in \[Jones, 2023\].**
 
 **autoSAROceanContrast is a standalone Python module that has been tested with SAR images acquired in L-, S-, C-, and X-band and in polarizations modes VV, HH, HV, and VH.  It works on images in radar coordinates or on a georeferenced grid, and requires a map of the incidence angle for each pixel in the scene.  If land is in the scene, the user can mask it out in the provided NRCS data or optionally can specify that a user-provided land mask file be used.**
 
-**There are two output files, one containing the contrast ratio and the other containing the cumulative distribution function's value for those pixels that are identified as being radar-dark relative to the identified as likely clean water pixels, i.e., having a contrast ratio significantly higher than that of the clean water peak, which is centered about a value of 1.  This threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
+**The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the pixel with the lower contrast ratio and 1 corresponding to the pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
 Copyright (C) 2024 California Institute of Technology.  Government Sponsorship Acknowledged.
 
