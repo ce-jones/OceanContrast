@@ -20,7 +20,9 @@
 
 **The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the pixel with the lower contrast ratio and 1 corresponding to the pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
-Copyright (C) 2024 California Institute of Technology.  Government Sponsorship Acknowledged.
+Copyright 2024 California Institute of Technology. ALL RIGHTS RESERVED.  
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
+You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
 Link: https://github.com/nasa-jpl/autoSAROceanContrast
 
@@ -35,7 +37,7 @@ Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov) translated the MATLAB code to Py
 
 **References:** 
 
-1. Jones, C. E. (2023). An automated algorithm for calculating the ocean contrast in support of oil spill response. Marine Pollution Bulletin, 191, 114952.
+1. [Jones, C. E. (2023). An automated algorithm for calculating the ocean contrast in support of oil spill response. Marine Pollution Bulletin, 191, 114952.](https://www.sciencedirect.com/science/article/pii/S0025326X23003843)
 
 ## 2. [Installation](/docs/install.md)
 
