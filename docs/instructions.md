@@ -15,13 +15,15 @@ Band 2 - Incidence angle \(in degrees or radians\)
 Optional Band 3 - Latitude \(not used by this code\)  
 Optional Band 4 - Longitude \(not used by this code\)  
 
-**ENVI Binary Raster**  
-This option is intended to work with UAVSAR geocoded .grd files from the UAVSAR PolSAR standard product, using the incidence angle .inc file provided.  These are flat binary files in real*4 format (32-bit floating point). An ENVI .hdr file is required to specify the dimensions of the grid and the georeferencing, if provided.  The code works for data in radar coordinates or in geographical coordinates.
-
 **NetCDF**  
 The code also works with a NetCDF file in the [NOAA CoastWatch](https://coastwatch.noaa.gov/cwn/data-access-tools/coastwatch-data-portal.html) file format.  This file contains the calibrated image with land masked out and an incidence angle layer.
 
 *Information on the NOAA CoastWatch file format is [here](https://www.star.nesdis.noaa.gov/socd/coastwatch/cwf/cw_cf_metadata.pdf).  We make no commitment that this description is up-to-date so check the [sample input data file](https://github.com/ce-jones/OceanContrast/edit/main/docs/instructions.md#4-sample-data) to see the contents.*
+
+**ENVI Binary Raster**  
+This option is intended to work with UAVSAR geocoded .grd files from the UAVSAR PolSAR standard product, using the incidence angle .inc file provided.  These are flat binary files in real*4 format (32-bit floating point) with the NRCS in linear units. An ENVI .hdr file is required to specify the dimensions of the grid and the georeferencing, if provided.  The code works for data in radar coordinates or in geographical coordinates.  
+
+The code is written to process all polarizations for a UAVSAR product basename.  The code requires that the search for clean water pixels be done on a file with NRCS in dB, whereas the standard UAVSAR products are in linear units.  The user must create this file.  In the sample data, the example file given is the total NRCS in dB.  The user can also just use one polarization.  
 
 **Optional Land Mask**  
 In the mask, values 0=water and 1=land.  The land mask is a flat binary file in real*4 format (32-bit floating point). An ENVI .hdr file is required to specify the dimensions of the grid.  There must be a 1:1 correspondence between the land mask grid and the NRCS file grid.  
@@ -62,7 +64,7 @@ Presently, this code can handle ENVI, GeoTIFF, and NetCDF formats on the input s
 ### a. GeoTIFF output
 
 #### Output: Contrast ratio file <br> This file contains the contrast ratio for all pixels in the scene.
-  *infilename*_JPL*N*_*qp*DR_contrast_ratio.tif<br>
+  *infilename*\_JPL*N*_*qp*DR_contrast_ratio.tif<br>
   *infilename* = input file name<br>
   *N* = code version number<br>
   *pq* = polarization<br>
@@ -71,7 +73,7 @@ Presently, this code can handle ENVI, GeoTIFF, and NetCDF formats on the input s
   *filename*_JPL*N*_*pq*DR_cumulative.tif
 
 ### b. ENVI output
-contrast ratio: *infilename*_JPL*N*_*qp*DR_contrast_ratio.*ext* and *infilename*_JPL*N*_*qp*DR_contrast_ratio.hdr <br>
+contrast ratio: *infilename*\_JPL*N*_DR_contrast_ratio.*ext* and *infilename*\_JPL*N*_DR_contrast_ratio.hdr <br>
   *ext* = dat or grd, depending upon the UAVSAR input file extension 
 cumulative: 
 
