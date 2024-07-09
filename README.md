@@ -1,8 +1,8 @@
 # auto_SAR_Ocean_Contrast \(autonomous Ocean Contrast Estimation for SAR Images\)
 
 [![Language](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/)
-[![Latest version CHANGE LINK](https://img.shields.io/badge/latest%20version-v1-yellowgreen.svg)](https://github.com/leiyangleon/autoRIFT/releases)
-[![License CHANGE LINK](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/leiyangleon/autoRIFT/blob/master/LICENSE)
+[![Latest version](https://img.shields.io/badge/latest%20version-v1-yellowgreen.svg)]()
+[![License CHANGE LINK](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/nasa-jpl/autoOceanContrast/blob/master/LICENSE)
 [![Citation](https://img.shields.io/badge/DOI-PUTHERE-blue)](https://doi.org/ADD)
 
 ### Update Notes:
@@ -20,7 +20,8 @@
 
 **The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the pixel with the lower contrast ratio and 1 corresponding to the pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
-Copyright 2024 California Institute of Technology. ALL RIGHTS RESERVED.  
+Copyright (c) 2023-24 California Institute of Technology (“Caltech”). U.S. Government
+sponsorship acknowledged.  All rights reserved.  
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
@@ -52,7 +53,40 @@ Sample input and output files for each input format option are available at ****
 
 NOTE: We intend to add open source code to classify the radar-dark pixels in the scene based upon damping ratio, to aid in identifying the thickest oil in a slick for emergency response.
 
-## 7. Acknowledgement
+## 7. License
+Copyright (c) 2023-24 California Institute of Technology (“Caltech”). U.S. Government
+sponsorship acknowledged.
+All rights reserved.
+Redistribution and use in source and binary forms, with or without modification, are permitted provided
+that the following conditions are met:  
+• Redistributions of source code must retain the above copyright notice, this list of conditions and
+the following disclaimer.  
+• Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+and the following disclaimer in the documentation and/or other materials provided with the
+distribution.  
+• Neither the name of Caltech nor its operating division, the Jet Propulsion Laboratory, nor the
+names of its contributors may be used to endorse or promote products derived from this software
+without specific prior written permission.  
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS;
+OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Open Source License Approved by Caltech/JPL
+APACHE LICENSE, VERSION 2.0
+• Text version: https://www.apache.org/licenses/LICENSE-2.0.txt
+• SPDX short identifier: Apache-2.0
+• OSI Approved License: https://opensource.org/licenses/Apache-2.0
+
+## 8. Acknowledgement
 
 This effort was funded by the NASA 2018 *A.37 Earth Science Applications: Disaster Risk Reduction and Response* call's  Marine Oil Thickness (MOST) project, P.I. Francis Monaldo (NOAA).
 
