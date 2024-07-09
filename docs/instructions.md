@@ -1,9 +1,5 @@
 # auto_SAR_Ocean_Contrast \(autonomous Ocean Contrast Estimation for SAR Images\)
 # Instructions
-[Input files](https://github.com/ce-jones/OceanContrast/main/docs/instructions.md#1-input-files)  
-[Instructions for running the code](https://github.com/ce-jones/OceanContrast/main/docs/instructions.md#2-instructions-for-running-the-code)  
-[Output files](https://github.com/ce-jones/OceanContrast/main/docs/instructions.md#3-output-files)  
-[Sample data](https://github.com/ce-jones/OceanContrast/main/docs/instructions.md#4-sample-data)  
 
 ## 1. Input files
 The code requires a calibrated SAR image file and an incidence angle file or layer on the same grid as the image.  The input can be in one of the three following formats:
