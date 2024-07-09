@@ -30,7 +30,7 @@ In the mask, values 0=water and 1=land.  The land mask is a flat binary file in 
 
 ## 2. Instructions for running the code
 
-The Jupyer Notebook **auto_calc_contrast_in_ocean.ipynb** contains the code for the algorithm and shows example output with debug mode enabled.  In the first code block the user sets the working directory \(parameter *wd*\) and whether to display additional plots at intermediate steps in the processing \(*debug = True*\).  The python code **auto_calc_contrast_in_ocean.py** is a stand-alone version that is easier to use when processing multiple files.
+The Jupyer Notebook **auto_calc_contrast_in_ocean.ipynb** contains the code for the algorithm.  In the first code block the user sets the working directory \(parameter *wd*\) and whether to display additional plots at intermediate steps in the processing \(*debug = True*\).  If processing of multiple files is requested, the JNB code stops after processing a single file and the user must manually adjust the index to process each subsequent file.  The python code **auto_calc_contrast_in_ocean.py** is a stand-alone version that is easier to use when processing multiple files.
 
 A **config.yaml** file is used to describe input data and select processing options. The directory [prototypes/ FIX THIS LINK](github.com/nasa-jpl/AutoOceanContrast/main/prototypes) contains example files for each input data format, which can be edited and renamed to config.yaml for running the code.  The config.yaml file needs to be in the working directory (top level).  
 
@@ -71,10 +71,12 @@ This file contains the contrast ratio for all pixels in the scene.<br>
   *pq* = polarization<br>
 #### Output2: Cumulative distribution 
 This files contains the ranking of the pixels identified as radar-dark (distinct from clean/bright water) on a scale from 0 to 1 based upon the contrast ratio.  Smaller values correspond to lower contrast ratios.<br> 
-  *filename*\_JPL*N*_*pq*DR_cumulative.tif
+  *infilename*\_JPL*N*_*pq*DR_cumulative.tif
 
 ### b. NetCDF output
-
+There is one NetCDF output file with variables contrast_ratio and cumulative.
+  *infilename*\_JPL*N*_*pq*DR_contrast_ratio.nc
+  
 ### c. ENVI output
 contrast ratio: *infilename*\_JPL*N*_DR_contrast_ratio.*ext* and *infilename*\_JPL*N*_DR_contrast_ratio.*ext*.hdr <br>
 cumulative: *infilename*\_JPL*N*_DR_cumulative.*ext* and *infilename*\_JPL*N*_DR_cumulative.*ext*.hdr <br>
