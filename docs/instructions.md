@@ -24,6 +24,8 @@ The code is written to process multiple polarizations for a UAVSAR product basen
 **Optional Land Mask**  
 In the mask, values 0=water and 1=land.  The land mask is a flat binary file in real*4 format (32-bit floating point). An ENVI .hdr file is required to specify the dimensions of the grid.  There must be a 1:1 correspondence between the land mask grid and the NRCS file grid.  
 
+**Sample input and output files for each input format option are available at [10.5281/zenodo.12702460](10.5281/zenodo.12702460)**
+
 ## 2. Instructions for running the code
 
 The Jupyer Notebook **auto_calc_contrast_in_ocean.ipynb** contains the code for the algorithm.  In the first code block the user sets the working directory \(parameter *wd*\) and whether to display additional plots at intermediate steps in the processing \(*debug = True*\).  If processing of multiple files is requested, the JNB code stops after processing a single file and the user must manually adjust the index to process each subsequent file.  The python code **auto_calc_contrast_in_ocean.py** is a stand-alone version that is easier to use when processing multiple files.
@@ -79,6 +81,3 @@ cumulative: *infilename*\_JPL*N*_DR_cumulative.*ext* and *infilename*\_JPL*N*_DR
   *infilename* = input file name<br>
   *N* = code version number<br>
   *ext* = dat or grd, depending upon the UAVSAR input file extension 
-
-## 4. Sample data
-Sample input and output files for each input format option are available at ****
