@@ -20,6 +20,8 @@
 
 **The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the pixel with the lower contrast ratio and 1 corresponding to the pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
+**Sample input and output files for each input format option are available at [10.5281/zenodo.12702460](10.5281/zenodo.12702460)**
+
 Copyright (c) 2023-24 California Institute of Technology (“Caltech”). U.S. Government
 sponsorship acknowledged.  All rights reserved.  
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
@@ -45,14 +47,11 @@ Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov) translated the MATLAB code to Py
 
 ## 4. [Algorithm](/docs/algorithm.md)
 
-## 5. Sample data
-Sample input and output files for each input format option are available at [10.5281/zenodo.12702460](10.5281/zenodo.12702460)
-
-## 6. Related Open Source Code
+## 5. Related Open Source Code
 
 NOTE: We intend to add open source code to classify the radar-dark pixels in the scene based upon damping ratio, to aid in identifying the thickest oil in a slick for emergency response.
 
-## 7. License
+## 6. License
 Copyright (c) 2023-24 California Institute of Technology (“Caltech”). U.S. Government
 sponsorship acknowledged.
 All rights reserved.
@@ -85,7 +84,7 @@ APACHE LICENSE, VERSION 2.0
 • SPDX short identifier: Apache-2.0
 • OSI Approved License: https://opensource.org/licenses/Apache-2.0
 
-## 8. Acknowledgement
+## 7. Acknowledgement
 
 This effort was funded by the NASA 2018 *A.37 Earth Science Applications: Disaster Risk Reduction and Response* call's  Marine Oil Thickness (MOST) project, P.I. Francis Monaldo (NOAA).
 
