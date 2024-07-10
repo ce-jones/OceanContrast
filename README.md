@@ -36,9 +36,8 @@ Cathleen E. Jones (JPL/Caltech; cathleen.e.jones@jpl.nasa.gov) developed the alg
 
 Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov) translated the MATLAB code to Python, further optimized the algorithm, and developed its sister module autoSpillID for oil spill classification.
 
-**References:** 
-
-1. [Jones, C. E. (2023). An automated algorithm for calculating the ocean contrast in support of oil spill response. Marine Pollution Bulletin, 191, 114952.](https://www.sciencedirect.com/science/article/pii/S0025326X23003843)
+**Reference:** 
+[Jones, C. E. (2023). An automated algorithm for calculating the ocean contrast in support of oil spill response. Marine Pollution Bulletin, 191, 114952.](https://www.sciencedirect.com/science/article/pii/S0025326X23003843)
 
 ## 2. [Installation](/docs/install.md)
 
@@ -47,7 +46,7 @@ Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov) translated the MATLAB code to Py
 ## 4. [Algorithm](/docs/algorithm.md)
 
 ## 5. Sample data
-Sample input and output files for each input format option are available at ****
+Sample input and output files for each input format option are available at [10.5281/zenodo.12702460](10.5281/zenodo.12702460)
 
 ## 6. Related Open Source Code
 
