@@ -20,7 +20,8 @@
 
 **The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the radar-dark pixel with the lower contrast ratio and 1 corresponding to the radar-dark pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
-**Sample input and output files for each input format option are available at [10.5281/zenodo.12702460](10.5281/zenodo.12702460)**
+**Sample input and output files for each input format option are available at
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12702460.svg)](https://doi.org/10.5281/zenodo.12702460)**
 
 Copyright (c) 2023-24 California Institute of Technology (“Caltech”). U.S. Government
 sponsorship acknowledged.  All rights reserved.  
