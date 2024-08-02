@@ -28,7 +28,7 @@ sponsorship acknowledged.  All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-Link: https://github.com/nasa-jpl/auto\_SAR\_Ocean\_Contrast
+Link: https://github.com/nasa-jpl/auto_SAR_Ocean_Contrast
 
 Citation: TBD https://doi.org/...
 
