@@ -1,9 +1,9 @@
 # auto_SAR_Ocean_Contrast \(autonomous Ocean Contrast Estimation for SAR Images\)
 
-[![Language](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/)
+[![Language](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
 [![Latest version](https://img.shields.io/badge/latest%20version-v1-yellowgreen.svg)]()
-[![License CHANGE LINK](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/nasa-jpl/autoOceanContrast/blob/master/LICENSE)
-[![Citation](https://img.shields.io/badge/DOI-PUTHERE-blue)](https://doi.org/ADD)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Citation](https://img.shields.io/badge/DOI-TBD-blue)](https://doi.org/TBD)
 
 ### Update Notes:
 
@@ -16,9 +16,9 @@
 
 **The contrast is defined as $\sigma^{clean}(\theta)\over\sigma(\theta)$, where $\sigma(\theta)$ is the calibrated Normalized Radar Cross Section (NRCS), which depends upon the incidence angle, $\theta$. The algorithm identifies high confidence clean sea pixels based on the statistics of the SAR intensity to calculate the ratio, as described in \[Jones, 2023\].**
 
-**auto_SAR_Ocean_Contrast is a Python module that has been tested with SAR images acquired in L-, S-, C-, and X-band and in polarizations modes VV, HH, HV, and VH.  It works on images in radar coordinates or on a georeferenced grid, and requires a map of the incidence angle for each pixel in the scene.  If land is in the scene, the user can mask it out in the provided NRCS data or optionally can specify that a user-provided land mask file be used.**
+**auto\_SAR\_Ocean\_Contrast is a Python module that has been tested with SAR images acquired in L\-, S\-, C\-, and X\-band and in polarizations modes VV, HH, HV, and VH.  It works on images in radar coordinates or on a georeferenced grid, and requires a map of the incidence angle for each pixel in the scene.  If land is in the scene, the user can mask it out in the provided NRCS data or optionally can specify that a user-provided land mask file be used.**
 
-**The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the pixel with the lower contrast ratio and 1 corresponding to the pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
+**The outputs are 1\) the contrast ratio for all ocean pixels in the scene, and 2\) the cumulative distribution function's value for those pixels that are identified as being radar-dark, with 0 corresponding the the radar-dark pixel with the lower contrast ratio and 1 corresponding to the radar-dark pixel with the highest contrast ratio. Radar-dark pixels are those identified as having a contrast ratio significantly higher than that of the clean water peak, which is centered about a contrast ratio value of 1.  The threshold is set adaptively based upon the statistics of the contrast ratio for the scene.  Various png figures are also output.**
 
 **Sample input and output files for each input format option are available at [10.5281/zenodo.12702460](10.5281/zenodo.12702460)**
 
@@ -27,7 +27,7 @@ sponsorship acknowledged.  All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
 
-Link: https://github.com/nasa-jpl/autoSAROceanContrast
+Link: https://github.com/nasa-jpl/auto\_SAR\_Ocean\_Contrast
 
 Citation: TBD https://doi.org/...
 
