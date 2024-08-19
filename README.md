@@ -1,6 +1,6 @@
 # auto_SAR_Ocean_Contrast \(autonomous Ocean Contrast Estimation for SAR Images\)
 
-[![Language](https://img.shields.io/badge/Python-3.9-blue)](https://www.python.org/)
+[![Language](https://img.shields.io/badge/Python-3.8-blue)](https://www.python.org/)
 [![Latest version](https://img.shields.io/badge/latest%20version-v1-yellowgreen.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Citation](https://img.shields.io/badge/DOI-TBD-blue)](https://doi.org/TBD)
