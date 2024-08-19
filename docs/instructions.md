@@ -32,7 +32,7 @@ In the mask, values 0=water and 1=land.  The land mask is a flat binary file in 
 
 The Jupyer Notebook **auto_calc_contrast_in_ocean.ipynb** contains the code for the algorithm.  In the first code block the user sets the working directory \(parameter *wd*\) and whether to display additional plots at intermediate steps in the processing \(*debug = True*\).  If processing of multiple files is requested, the JNB code stops after processing a single file and the user must manually adjust the index to process each subsequent file.  The python code **auto_calc_contrast_in_ocean.py** is a stand-alone version that is easier to use when processing multiple files.
 
-A **config.yaml** file is used to describe input data and select processing options. The directory [**prototypes**](../prototypes) contains example config.yaml files for each input data format, which can be edited and renamed to config.yaml for running the code.  The config.yaml file needs to be in the working directory (top level).  
+A **config.yaml** file is used to describe input data and select processing options. The directory **prototypes** contains example config.yaml files for each input data format, which can be edited and renamed to config.yaml for running the code.  The config.yaml file needs to be in the working directory (top level).  
 
 **The config.yaml file specifies the following:**  
  - input and output file formats  
