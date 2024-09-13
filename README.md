@@ -3,7 +3,7 @@
 [![Language](https://img.shields.io/badge/Python-3.8-blue)](https://www.python.org/)
 [![Latest version](https://img.shields.io/badge/latest%20version-v1-yellowgreen.svg)]()
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
-[![Citation](https://img.shields.io/badge/DOI-TBD-blue)](https://doi.org/TBD)
+[![Citation](https://img.shields.io/badge/DOI-10.48588/h6h7*dash*8y85-blue)](https://doi.org/10.48588/h6h7-8y85)
 
 ### Update Notes:
 
@@ -30,14 +30,14 @@ You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2
 
 Link: https://github.com/nasa-jpl/auto_SAR_Ocean_Contrast
 
-Citation: TBD https://doi.org/...
+Citation: [doi.org/10.48588/h6h7-8y85](https://doi.org/10.48588/h6h7-8y85)
 
 
 ## 1. Authors
 
-Cathleen E. Jones (JPL/Caltech; cathleen.e.jones@jpl.nasa.gov) developed the algorithm, which is described in (Jones, 2013), developed the first version in MATLAB, and tested and refined it for SAR data from UAVSAR, FSAR, ISRO/ASAR, Sentinel-1, TerraSAR-X, and Radarsat-2.
+Cathleen E. Jones (JPL/Caltech; cathleen.e.jones@jpl.nasa.gov; ORCID: 0000-0002-2739-1545) developed the algorithm, which is described in (Jones, 2013), developed the first version in MATLAB, and tested and refined it for SAR data from UAVSAR, FSAR, ISRO/ASAR, Sentinel-1, TerraSAR-X, and Radarsat-2.
 
-Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov) translated the MATLAB code to Python, further optimized the algorithm, and developed its sister module autoSpillID for oil spill classification.
+Peter Mao (JPL/Caltech; peter.mao@jpl.nasa.gov; ORCID: 0009-0002-5543-153X) translated the MATLAB code to Python, further optimized the algorithm, and developed its sister module autoSpillID for oil spill classification.
 
 **Reference:** 
 [Jones, C. E. (2023). An automated algorithm for calculating the ocean contrast in support of oil spill response. Marine Pollution Bulletin, 191, 114952.](https://www.sciencedirect.com/science/article/pii/S0025326X23003843)
